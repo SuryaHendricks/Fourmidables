@@ -1,0 +1,568 @@
+/*Nom: Hendricks*/
+/*Prénom: Surya*/
+/*Date de création: 12-03-19*/
+/*Date dernière modif: 9-04-19*/
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Sorts+Mill+Goudy');
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.master { /*Bloc supérieur contenant les blocs 1 et 2*/
+  width: 1000px; /*Largeur du bloc*/
+  height: 600px; /*hauteur du bloc*/
+  display: flex; /*Défini ce bloc en "flex"*/
+  margin: auto;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+   border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  justify-content:space-around;
+  flex-direction: column; /*Les blocs dans master seront en collone*/
+  
+}
+#bloc1-1{ /*bloc contenant le titre de l'index*/
+  flex: 1; /*rempli master de 50% avec bloc1*/
+  background-color: rgba(5, 5, 5, 0.3);
+height: 320px; 
+}
+#bloc1-2{ /*bloc contenant le titre de anatomie*/
+  flex: 1; 
+  background-color: rgba(88, 53, 0, 0.70);
+height: 320px; 
+}
+#bloc1-3{ /*bloc contenant le titre de organisation*/
+  flex: 1; 
+  background-color: rgba(104, 117, 32, 0.9);
+height: 320px; 
+}
+#bloc1-4{ /*bloc contenant le titre de altruisme*/
+  flex: 1;
+  background-color: rgba(33, 51, 5, 0.85);
+height: 320px; 
+}
+#bloc1-5{ /*bloc contenant le titre de bienfaits*/
+  flex: 1; 
+  background-color: rgba(61, 45, 45, 0.95);
+height: 320px; 
+}
+#bloc1-6{ /*bloc contenant le titre de technologies*/
+  flex: 1; 
+  background-color: rgba(121, 88, 53, 0.9);
+height: 320px; 
+}
+#bloc2-1,#bloc2-2,#bloc2-3,#bloc2-4,#bloc2-5,#bloc2-6{
+  height: 280px; 	
+  flex: 1;/*rempli master de 50% avec bloc2*/
+  background-size:cover; /*Etire l'image pour recouvrir tout le bloc*/
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top: 2px solid white;
+}
+#bloc2-1{ /*bloc contenant l'image de l'index*/
+  background-image: url('image/accueil.jpg');/*met une image de fond dans bloc2*/
+}
+#bloc2-2{ /*bloc contenant l'image de anatomie*/
+  background-image: url('image/anatomy.jpg');
+}
+#bloc2-3{ /*bloc contenant l'image de organisation*/
+  background-image: url('image/organisation2.PNG');
+}
+#bloc2-4{ /*bloc contenant l'image de altruisme*/
+  background-image: url('image/altruisme2.PNG');
+}
+#bloc2-5{ /*bloc contenant l'image de bienfaits*/
+  background-image: url('image/bienfaits1.jpg');
+}
+#bloc2-6{ /*bloc contenant l'image de technologie*/
+  background-image: url('image/techno.PNG');
+}
+#titre1-1,#titre1-2,#titre1-3,#titre1-4,#titre1-5,#titre1-6{ /*Titre principal*/
+  text-align: center; /*centre le texte par rapport à son bloc*/
+  margin-top: 30px;/*définis une marge externe supérieur*/
+  font-size: 150px;/* définis la taille de la police*/
+  font-family: "Dokdo";/*définis la police de caractère*/
+  font: bold;
+  color: #b8f6e7;/*définis la couleur du texte*/
+  letter-spacing: 3px;/*définis l'espace entre les lettres*/
+  
+}
+#titre1-1{
+color: #b8f6e7;/*définis la couleur du texte*/	
+}
+#titre1-2{
+color: rgba(204, 147, 17, 0.85);	
+}
+#titre1-3{
+color: #142c01;		
+}
+#titre1-4{
+color: #aed674;	
+}
+#titre1-5{
+color: #f3685d;	
+}
+#titre1-6{
+color: #0d2827;	
+}
+.master_titre:first-of-type{ /*Bloc contenant les titres centraux*/
+	text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.master_titre{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.master_titre .sous-titre{ /*Titres centraux*/
+ display: inline;
+ font-family: "Sorts Mill Goudy";
+ font-size: 25px;
+ color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.master_h4{ /*Bloc contenant les petits titres*/
+  margin-left: 60px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}	
+.master_h4 .petit_titre{/*Petits titres*/
+ display: inline;
+ font-family: "Sorts Mill Goudy";
+ font-size: 20px;
+ color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;	
+}
+.saut{ /*Permet le saut de ligne*/
+	clear: both;
+	margin-top: 20px;
+}
+.pt2{/*Couleur des petits titre page anatomie*/
+background-color: rgba(156, 111, 10, 0.85);		
+
+}
+.pt3{
+background-color: #142c01;
+}
+.pt4{
+background-color: #516a2e;	
+}
+.pt5{
+background-color: #f3685d;	
+}
+.pt6{
+background-color: #0d2827;		
+}
+.s1{ /*Couleur du titre central page index*/
+background-color: #004844; 	
+}
+.s2{
+background-color: rgba(156, 111, 10, 0.85);		
+}
+.s3{
+background-color: #142c01;
+}
+.s4{
+background-color: #516a2e;	
+}
+.s5{
+background-color: #f3685d;	
+}
+.s6{
+background-color: #0d2827;		
+}
+.des1{ /*Couleur de fond du bloc central page index*/
+  background-color: rgba(27, 117, 97, 0.95);
+}
+.des2{
+  background-color: rgba(88, 53, 0, 0.89);
+}
+.des3{
+  background-color: rgba(104, 117, 32, 0.9);
+}
+.des4{
+  background-color: rgba(33, 51, 5, 0.9);
+}
+.des5{
+  background-color: rgba(61, 45, 45, 0.95);
+}
+.des6{
+  background-color: rgba(121, 88, 53, 0.95);
+}
+
+.description1{ /*bloc principal qui reprend les infos*/
+  
+  width: 1000px;
+  margin: auto;
+  margin-top:100px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 50px;
+}
+.description1 .p1{ /*paragraphes qui se trouvent dans description*/
+
+  margin-bottom: 40px;
+  color: white;
+  font-size: 28px;
+  clear: both; /*neutraliser un FLOAT*/
+   
+}
+.bloc_img{ /*Blocs contenant les images sur toute les pages*/
+  height: 200px;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  float: left; 
+  background-size: cover;
+}
+
+.im1{
+  background-image: url('image/squelette1.jpg');  
+}
+.im2{
+background-image: url('image/squelette2.jpg');
+}
+.im3{
+background-image: url('image/tête1.jpg');
+
+}
+.im4{
+background-image: url('image/tête2.png');
+}
+.im5{
+background-image: url('image/mandibules1.jpg');
+}
+.im6{
+background-image: url('image/mandibules2.jpg');
+}
+.im7{
+background-image: url('image/oeil1.jpg');
+}
+.im8{
+background-image: url('image/ocelle.PNG');
+}
+.im9{
+background-image: url('image/antenne1.jpg');	
+}
+.im10{
+background-image: url('image/antenne2.jpg');	
+}
+.im11{
+background-image: url('image/thorax.jpg');	
+}
+.im12{
+background-image: url('image/patte.PNG');	
+}
+.im13{
+background-image: url('image/abdomen1.jpg');	
+}
+.im14{
+background-image: url('image/abdomen2.jpg');	
+}
+.im15{
+background-image: url('image/portière.jpg');	
+}
+.im16{
+background-image: url('image/legion.jpg');	
+}
+.im17{
+background-image: url('image/miel1.jpg');	
+}
+.im18{
+background-image: url('image/miel2.jpg');	
+}
+.im19{
+background-image: url('image/embou1.jpg');	
+}
+.im20{
+background-image: url('image/embou2.png');	
+}
+.bloc_gimg{ /*bloc contenant de plus grande images*/
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	width: 600px;
+	height: 400px;
+	background-color: red;
+	border: 2px solid white;
+	border-radius: 20px;
+
+}
+.gimg1{ /*Grande image*/
+background-image: url('image/media.PNG');
+background-size:cover;	
+}
+
+nav{/*paramètres des menus 1 à 6*/
+  
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+}
+#vidtech, #vidcit{ /*Vidéos Technologie et Citadelle*/
+	margin: auto;
+	margin-top: 48px;
+	margin-left: 63px;
+}
+.blocvid{ /*Bloc décoratif contenant les vidéos*/
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	width: 756px;
+	height: 620px;
+	border: 2px solid white;
+	border-radius: 20px;	
+}
+.v1{ /*Couleur de fond du premmier bloc décoratif pour vidéo*/
+	background-color: #004844; 
+}
+.v2{
+background-color: #0d2827;	
+}
+
+.menu1,.menu2,.menu3,.menu4,.menu5,.menu6  {/*paramètres menus 1 à 6*/
+  text-decoration: none;
+  font-family: "Sorts Mill Goudy";
+  font-size: 24px;
+  font-weight:bold;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  color: white;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top-left-radius:100px;
+  border-top-right-radius: 100px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  padding-top: 48px;
+filter: brightness(70%);
+-webkit-filter: brightness(70%);
+}
+.menu1{ /* menu accueil*/
+  background-image: url('image/accueil.jpg');
+  background-size:cover;
+
+}
+.menu2{/* menu anatomie*/
+  background-image: url('image/anatomy.jpg');
+  background-size:cover;
+}
+
+.menu3{/* menu organisation*/
+   background-image: url('image/organisation.jpg');
+  background-size:cover;
+}
+.menu4{/* menu altruisme*/
+  background-image: url('image/altruisme.jpg');
+  background-size:cover;
+  
+}
+.menu5{/* menu bienfaits*/
+  background-image: url('image/bienfaits.JPG');
+  background-size:cover;
+
+}
+.menu6{/* menu technologies*/
+  background-image: url('image/techno.PNG');
+  background-size:cover;
+
+}
+.menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover,.menu5:hover,.menu6:hover{/*augmente la luminosité du menu quand on passe la souris dessus*/
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+#menu_in1,#menu_in2,#menu_in3,#menu_in4,#menu_in5,#menu_in6{/*Menu-in (dans la page qui lui correspond) exemple: menu accueil éclairé lorsque l'on est sur la page accueil*/
+   	text-decoration: none;
+  font-family: "Sorts Mill Goudy";
+  font-size: 24px;
+  font-weight:bold;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  padding-top: 48px;
+  color: white;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-size:cover;
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);	
+}
+#menu_in1{ 
+background-image: url('image/accueil.jpg');	
+}
+#menu_in2{
+background-image: url('image/anatomy.jpg');	
+}
+#menu_in3{
+background-image: url('image/organisation.jpg');	
+}
+#menu_in4{
+background-image: url('image/altruisme.jpg');	
+}
+#menu_in5{
+background-image: url('image/bienfaits.JPG');	
+}
+#menu_in6{
+background-image: url('image/techno.PNG');	
+}
+#ref{ /*Menu amenant à la page ref.html*/
+  text-decoration: none;
+  font-family: "Sorts Mill Goudy";
+  font-size: 40px;
+  font-weight:bold;
+  color: white;
+  width: 400px;
+  height: 100px;
+  border: 2px solid white;
+  text-align: center;
+  margin-right: 100px;
+  padding-top: 20px;
+  border-radius: 30px;
+  background-color: #004844;
+  
+}
+#ref:hover{
+  background-color: rgba(27, 117, 97, 0.95);
+  color:#004844;
+  
+}
+.lienref{
+  font-size: 28px;
+  color: white;
+  line-height: 30px;
+}
+#titreref{ /*Titre de la page ref*/
+text-align: center; 
+  margin-top: 10px;
+  font-size: 150px;
+  font-family: "Dokdo";
+  font: bold;
+  color: #b8f6e7;
+  letter-spacing: 3px;	
+}
+header{ /*Bloc contenant le titre de la page ref*/ 
+  width: 1000px;
+  margin: auto;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 50px;
+  background-color: rgba(27, 117, 97, 0.95);  
+}
+/*Tableau élevage fourmis*/
+table {
+  border: 5px solid white;
+  border-collapse: collapse;
+  width: 400px; 
+  margin: auto;
+}
+
+th { /* En-tête des colonnes */
+  font-family: "Sorts Mill Goudy";
+  font-size:17px;
+  border: 3px solid #000000;
+  width: 400px;
+  padding: 5px;
+  
+  
+
+}
+
+td { /* Cellules */
+  font-family: sans-serif;
+  border: 1px solid #000000;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+}
+
+#ligne1{
+  background-color: #004844;
+  color: white;
+}
+#topleft{
+	border-top-left-radius: 20px;
+}
+/*Tableau élevage fourmis fin*/
+footer{/*bloc contenant masterinfooter*/
+ width: auto;
+  height: 110px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: rgba(0, 171, 132, 0.79);
+  
+}
+#masterinfooter{/*bloc contenant les infooter1*/
+  width: 1000px;
+  height: 110px;
+  margin: auto;
+  display: flex;
+  justify-content:space-around;
+  flex-direction:row;
+}
+#infooter1{ /*bloc contenant les blocs d'information me concernant ex: prénom, nom,...*/
+  flex: 1;
+  border-right: 2px solid white;
+  padding-top: 15px;
+  
+}
+#infooter1 p{/*les informations me concernant*/
+  font-size: 25px;
+  margin-left: 120px;
+  color: white;
+  
+}
+#infooter2{
+  flex: 1;
+  border-right: 2px solid white;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+#infooter2 p{
+  font-size: 25px;
+  margin-left: 100px;
+  
+  color: white;
+
+}
+#infooter3{
+  flex: 1;
+  padding-top: 10px;
+  
+}
+#infooter3 p{
+  font-size: 25px;
+  margin-left: 120px;
+  color: white;
+}
