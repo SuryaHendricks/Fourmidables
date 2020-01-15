@@ -1,4 +1,4 @@
-Fourmidable
+Fourmidables
 =====
 * *Version*: 1.0.0
 * *Authors*: Surya Hendricks, 
