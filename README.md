@@ -14,7 +14,7 @@ Technologies
 Link 
 ----
 
-[Open the project](https://suryahendricks.github.io/fourmidable/)
+[Open the project](https://suryahendricks.github.io/Fourmidables/)
 
 Screenshot
 ----
